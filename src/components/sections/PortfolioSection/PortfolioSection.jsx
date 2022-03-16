@@ -1,7 +1,9 @@
 import React from "react";
+import PortfolioBtn from "../../buttons/PortfolioBtn/PortfolioBtn";
 import PortfolioCard from "../../cards/PortfolioCard/PortfolioCard";
+import { Work } from "../../../data/data";
 
-export default function PortfolioSection() {
+export default function PortfolioSection(props) {
   return (
     <div className="section" id="portfolio">
       <div className="container">
@@ -10,36 +12,16 @@ export default function PortfolioSection() {
             <div className="h4 text-center mb-4 title">Portfolio</div>
             <div className="nav-align-center">
               <ul className="nav nav-pills nav-pills-primary" role="tablist">
-                <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    data-toggle="tab"
-                    href="#web-development"
-                    role="tablist"
-                  >
-                    <i className="fa fa-laptop" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    data-toggle="tab"
-                    href="#graphic-design"
-                    role="tablist"
-                  >
-                    <i className="fa fa-picture-o" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    data-toggle="tab"
-                    href="#Photography"
-                    role="tablist"
-                  >
-                    <i className="fa fa-camera" aria-hidden="true"></i>
-                  </a>
-                </li>
+                <PortfolioBtn
+                  linkPortfolio="#web-develipment"
+                  classPortfolio="nav-link active"
+                  classPortfolioBtn="fa fa-code"
+                ></PortfolioBtn>
+                <PortfolioBtn
+                  linkPortfolio="#working"
+                  classPortfolio="nav-link"
+                  classPortfolioBtn="fa fa-code-fork"
+                ></PortfolioBtn>
               </ul>
             </div>
           </div>
@@ -49,27 +31,15 @@ export default function PortfolioSection() {
             <div className="ml-auto mr-auto">
               <div className="row">
                 <div className="col-md-6">
-                  <PortfolioCard
-                    linkEnter="./"
-                    projectName="Startup Project"
-                    projectTitle="Web Development"
-                  ></PortfolioCard>
-                  <PortfolioCard
-                    linkEnter="./"
-                    projectName="Startup Project"
-                    projectTitle="Web Development"
-                  ></PortfolioCard>
-                </div>
-                <div className="col-md-6">
-                  <PortfolioCard
-                    linkEnter="./"
-                    projectName="Startup Project"
-                    projectTitle="Web Development"
-                  ></PortfolioCard>
-                  <PortfolioCard
-                    projectName="Startup Project"
-                    projectTitle="Web Development"
-                  ></PortfolioCard>
+                  {Work.map((value) => (
+                    <PortfolioCard
+                      key={value.id}
+                      imageUrl={value.imageUrl}
+                      linkEnter={value.linkUrl}
+                      projectName={value.title}
+                      projectTitle={value.category}
+                    ></PortfolioCard>
+                  ))}
                 </div>
               </div>
             </div>

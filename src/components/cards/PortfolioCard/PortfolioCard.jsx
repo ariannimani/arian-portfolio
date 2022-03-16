@@ -9,7 +9,7 @@ export default function PortfolioCard(props) {
     >
       <a href={props.linkEnter}>
         <figure className="cc-effect">
-          <img src="images/project-1.jpg" alt="Image3" />
+          <img src={props.imageUrl} alt="Image3" />
           <figcaption>
             <div className="h4">{props.projectName}</div>
             <p>{props.projectTitle}</p>
