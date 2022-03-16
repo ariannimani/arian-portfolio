@@ -2,7 +2,6 @@ import React from "react";
 import PortfolioBtn from "../../buttons/PortfolioBtn/PortfolioBtn";
 import PortfolioCard from "../../cards/PortfolioCard/PortfolioCard";
 import { Work } from "../../../data/data";
-import "./PortfolioSection.styles.css";
 
 export default function PortfolioSection(props) {
   return (
@@ -18,11 +17,6 @@ export default function PortfolioSection(props) {
                   classPortfolio="nav-link active"
                   classPortfolioBtn="fa fa-code"
                 ></PortfolioBtn>
-                <PortfolioBtn
-                  linkPortfolio="#working"
-                  classPortfolio="nav-link"
-                  classPortfolioBtn="fa fa-code-fork"
-                ></PortfolioBtn>
               </ul>
             </div>
           </div>
@@ -32,18 +26,16 @@ export default function PortfolioSection(props) {
             <div className="ml-auto mr-auto">
               <div className="row">
                 <div className="col-md-6">
-                  <div className="col-grid">
-                    {Work.map((value) => (
-                      <PortfolioCard
-                        key={value.id}
-                        imageUrl={value.imageUrl}
-                        linkEnter={value.linkUrl}
-                        projectName={value.title}
-                        projectTitle={value.category}
-                      ></PortfolioCard>
-                    ))}
-                  </div>
+                  {Work.map((value) => (
+                    <PortfolioCard
+                      key={value.id}
+                      imageUrl={value.imageUrl}
+                      title={value.title}
+                      category={value.category}
+                    ></PortfolioCard>
+                  ))}
                 </div>
+                <div className="col-md-6"></div>
               </div>
             </div>
           </div>

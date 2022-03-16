@@ -16,6 +16,7 @@ function SkillSection() {
             <div className="row">
               {Skills.map((value) => (
                 <SkillsCard
+                  key={value.id}
                   language={value.language}
                   percentage={value.percentage}
                 ></SkillsCard>

@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function PortfolioCard(props) {
   return (
     <div
@@ -7,12 +6,15 @@ export default function PortfolioCard(props) {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <a href={props.linkEnter}>
+      <a href="#web-development">
         <figure className="cc-effect">
-          <img src={props.imageUrl} alt="Image3" />
+          <img
+            src={require("../../../images/" + props.imageUrl)}
+            alt="Portfolio"
+          />
           <figcaption>
-            <div className="h4">{props.projectName}</div>
-            <p>{props.projectTitle}</p>
+            <div className="h4">{props.title}</div>
+            <p>{props.category}</p>
           </figcaption>
         </figure>
       </a>
