@@ -14,7 +14,7 @@ function ProfilePage() {
             data-parallax="true"
             style={{
               backgroundImage:
-                "url(" + require("../../../images/cc-bg-1.jpg") + ")",
+                "url(" + require("../../../images/bg-1.jpg") + ")",
             }}
           ></div>
           <div className="container">
