@@ -13,32 +13,18 @@ const AboutMe = {
 
 const Work = [
   {
-    title: "Recent Project",
+    title: "MovieReact",
     imageUrl: "project-1.jpg",
     id: 1,
     category: "web-development",
-    linkUrl: "./",
+    linkUrl: "https://github.com/ariannimani/cinema-react-js",
   },
   {
-    title: "Recent Project",
+    title: "Portfolio",
     imageUrl: "project-2.jpg",
     id: 2,
     category: "web-development",
-    linkUrl: "./",
-  },
-  {
-    title: "Recent Project",
-    imageUrl: "project-3.jpg",
-    id: 3,
-    category: "web-development",
-    linkUrl: "./",
-  },
-  {
-    title: "Recent Project",
-    imageUrl: "project-4.jpg",
-    id: 4,
-    category: "web-development",
-    linkUrl: "./",
+    linkUrl: "https://github.com/ariannimani/ariannimani.github.io",
   },
 ];
 
