@@ -124,4 +124,37 @@ const Education = [
   },
 ];
 
-export { AboutMe, Experience, Work, Education };
+const Skills = [
+  {
+    id: 1,
+    language: "HTML",
+    percentage: "70%",
+  },
+  {
+    id: 2,
+    language: "CSS",
+    percentage: "80%",
+  },
+  {
+    id: 3,
+    language: "Sass",
+    percentage: "60%",
+  },
+  {
+    id: 4,
+    language: "Javascript",
+    percentage: "60%",
+  },
+  {
+    id: 5,
+    language: "React",
+    percentage: "75%",
+  },
+  {
+    id: 6,
+    language: "Bootstrap",
+    percentage: "50%",
+  },
+];
+
+export { AboutMe, Experience, Work, Education, Skills };
