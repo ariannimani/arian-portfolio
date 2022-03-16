@@ -2,6 +2,7 @@ import React from "react";
 import PortfolioBtn from "../../buttons/PortfolioBtn/PortfolioBtn";
 import PortfolioCard from "../../cards/PortfolioCard/PortfolioCard";
 import { Work } from "../../../data/data";
+import "./PortfolioSection.styles.css";
 
 export default function PortfolioSection(props) {
   return (
@@ -31,15 +32,17 @@ export default function PortfolioSection(props) {
             <div className="ml-auto mr-auto">
               <div className="row">
                 <div className="col-md-6">
-                  {Work.map((value) => (
-                    <PortfolioCard
-                      key={value.id}
-                      imageUrl={value.imageUrl}
-                      linkEnter={value.linkUrl}
-                      projectName={value.title}
-                      projectTitle={value.category}
-                    ></PortfolioCard>
-                  ))}
+                  <div className="col-grid">
+                    {Work.map((value) => (
+                      <PortfolioCard
+                        key={value.id}
+                        imageUrl={value.imageUrl}
+                        linkEnter={value.linkUrl}
+                        projectName={value.title}
+                        projectTitle={value.category}
+                      ></PortfolioCard>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

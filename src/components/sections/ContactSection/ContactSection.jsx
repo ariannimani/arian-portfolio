@@ -1,6 +1,14 @@
 import React from "react";
+import { AboutMe } from "../../../data/data";
+import { useForm, ValidationError } from "@formspree/react";
+import "./ContactSection.styles.css";
 
 export default function ContactSection() {
+  const [state, handleSubmit] = useForm("xgedzzel");
+  if (state.succeeded) {
+    return <p className="success-msg">Thank you for contacting me!</p>;
+  }
+
   return (
     <div className="section" id="contact">
       <div
@@ -16,10 +24,7 @@ export default function ContactSection() {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="card-body">
-                        <form
-                          action="https://formspree.io/your@email.com"
-                          method="POST"
-                        >
+                        <form onSubmit={handleSubmit}>
                           <div className="p pb-3">
                             <strong>Feel free to contact me </strong>
                           </div>
@@ -35,6 +40,11 @@ export default function ContactSection() {
                                   name="name"
                                   placeholder="Name"
                                   required="required"
+                                />
+                                <ValidationError
+                                  prefix="text"
+                                  field="text"
+                                  errors={state.errors}
                                 />
                               </div>
                             </div>
@@ -52,6 +62,11 @@ export default function ContactSection() {
                                   placeholder="Subject"
                                   required="required"
                                 />
+                                <ValidationError
+                                  prefix="text"
+                                  field="text"
+                                  errors={state.errors}
+                                />
                               </div>
                             </div>
                           </div>
@@ -68,6 +83,11 @@ export default function ContactSection() {
                                   placeholder="E-mail"
                                   required="required"
                                 />
+                                <ValidationError
+                                  prefix="Email"
+                                  field="email"
+                                  errors={state.errors}
+                                />
                               </div>
                             </div>
                           </div>
@@ -80,12 +100,21 @@ export default function ContactSection() {
                                   placeholder="Your Message"
                                   required="required"
                                 ></textarea>
+                                <ValidationError
+                                  prefix="Message"
+                                  field="message"
+                                  errors={state.errors}
+                                />
                               </div>
                             </div>
                           </div>
                           <div className="row">
                             <div className="col">
-                              <button className="btn btn-primary" type="submit">
+                              <button
+                                className="btn btn-primary"
+                                type="submit"
+                                disabled={state.submitting}
+                              >
                                 Send
                               </button>
                             </div>
@@ -98,17 +127,12 @@ export default function ContactSection() {
                         <p className="mb-0">
                           <strong>Address </strong>
                         </p>
-                        <p className="pb-2">
-                          140, City Center, New York, U.S.A
-                        </p>
-                        <p className="mb-0">
-                          <strong>Phone</strong>
-                        </p>
-                        <p className="pb-2">+1718-111-0011</p>
+                        <p className="pb-2">{AboutMe.address}</p>
+
                         <p className="mb-0">
                           <strong>Email</strong>
                         </p>
-                        <p>anthony@company.com</p>
+                        <p>{AboutMe.email}</p>
                       </div>
                     </div>
                   </div>

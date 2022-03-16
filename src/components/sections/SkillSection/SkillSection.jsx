@@ -2,7 +2,7 @@ import React from "react";
 import SkillsCard from "../../cards/SkillsCard/SkillsCard";
 import { Skills } from "../../../data/data";
 
-function SkillSection(props) {
+function SkillSection() {
   return (
     <div className="section" id="skill">
       <div className="container">
