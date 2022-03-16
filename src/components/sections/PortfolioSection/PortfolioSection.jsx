@@ -29,6 +29,7 @@ export default function PortfolioSection(props) {
                   {Work.map((value) => (
                     <PortfolioCard
                       key={value.id}
+                      linkUrl={value.linkUrl}
                       imageUrl={value.imageUrl}
                       title={value.title}
                       category={value.category}

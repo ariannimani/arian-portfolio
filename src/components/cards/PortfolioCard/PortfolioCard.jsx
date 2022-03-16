@@ -6,7 +6,7 @@ export default function PortfolioCard(props) {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
-      <a href="#web-development">
+      <a href={props.linkUrl}>
         <figure className="cc-effect">
           <img
             src={require("../../../images/" + props.imageUrl)}
