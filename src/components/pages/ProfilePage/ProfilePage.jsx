@@ -48,6 +48,7 @@ function ProfilePage() {
               <div className="button-container">
                 {Social.map((value) => (
                   <CircleBtn
+                    key={value.id}
                     enterLink={value.linkUrl}
                     titleBtn={"Follow me on " + value.social}
                     classBtn={"fa fa-" + value.social}

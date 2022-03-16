@@ -15,7 +15,7 @@ export default function SkillsCard(props) {
             aria-valuenow="60"
             aria-valuemin="0"
             aria-valuemax="100"
-            styles="width: 75%"
+            style={{ width: props.percentage }}
           ></div>
           <span className="progress-value">{props.percentage}</span>
         </div>

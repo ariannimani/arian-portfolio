@@ -79,17 +79,17 @@ const Social = [
   {
     id: 1,
     social: "instagram",
-    linkUrl: "https://instagram.com",
+    linkUrl: "https://instagram.com/ariannimani",
   },
   {
     id: 2,
     social: "linkedin",
-    linkUrl: "https://linkedin.com",
+    linkUrl: "https://www.linkedin.com/in/ariannimani/",
   },
   {
     id: 3,
     social: "github",
-    linkUrl: "https://github.com",
+    linkUrl: "https://github.com/ariannimani",
   },
 ];
 
