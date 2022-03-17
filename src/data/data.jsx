@@ -16,14 +16,14 @@ const Work = [
     title: "MovieReact",
     imageUrl: "project-1.jpg",
     id: 1,
-    category: "web-development",
+    category: "React Project",
     linkUrl: "https://github.com/ariannimani/cinema-react-js",
   },
   {
     title: "Portfolio",
     imageUrl: "project-2.jpg",
     id: 2,
-    category: "web-development",
+    category: "React Project",
     linkUrl: "https://github.com/ariannimani/ariannimani.github.io",
   },
 ];

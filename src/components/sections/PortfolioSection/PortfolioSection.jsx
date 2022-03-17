@@ -25,18 +25,15 @@ export default function PortfolioSection(props) {
           <div className="tab-pane active" id="web-development">
             <div className="ml-auto mr-auto">
               <div className="row">
-                <div className="col-md-6">
-                  {Work.map((value) => (
-                    <PortfolioCard
-                      key={value.id}
-                      linkUrl={value.linkUrl}
-                      imageUrl={value.imageUrl}
-                      title={value.title}
-                      category={value.category}
-                    ></PortfolioCard>
-                  ))}
-                </div>
-                <div className="col-md-6"></div>
+                {Work.map((value) => (
+                  <PortfolioCard
+                    key={value.id}
+                    linkUrl={value.linkUrl}
+                    imageUrl={value.imageUrl}
+                    title={value.title}
+                    category={value.category}
+                  ></PortfolioCard>
+                ))}
               </div>
             </div>
           </div>
