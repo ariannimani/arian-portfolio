@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7147346d.css",
+    "main.js": "/static/js/main.1c94cec5.js",
+    "static/js/787.9ecfc8fd.chunk.js": "/static/js/787.9ecfc8fd.chunk.js",
+    "static/media/bg-1.jpg": "/static/media/bg-1.ee4ba4f5c8af075bea39.jpg",
+    "static/media/ARIAN NIMANI CV.pdf": "/static/media/ARIAN NIMANI CV.d7e25174f533a80328ae.pdf",
+    "static/media/ecommerce-crwn-image.jpg": "/static/media/ecommerce-crwn-image.1430b395e965645ecfe2.jpg",
+    "static/media/cinema-image.jpg": "/static/media/cinema-image.8167239dcc5ac8f96284.jpg",
+    "static/media/chatapp-image.jpg": "/static/media/chatapp-image.0d92c306c2f5559876b0.jpg",
+    "static/media/crypto-dashboard-image.jpg": "/static/media/crypto-dashboard-image.9d670e93afb989f1aa28.jpg",
+    "static/media/cinema-image.png": "/static/media/cinema-image.04ce05950df593035be3.png",
+    "static/media/e-commerce-image.jpg": "/static/media/e-commerce-image.22955df8ba651b7a2e35.jpg",
+    "static/media/project-13.jpg": "/static/media/project-13.8fad21ea24f9cedc839f.jpg",
+    "static/media/portfolio-image.jpg": "/static/media/portfolio-image.abd952b1498ca19ee9f1.jpg",
+    "static/media/project-4.jpg": "/static/media/project-4.cdfcab2ee34740fbd981.jpg",
+    "static/media/arianImage.jpg": "/static/media/arianImage.e739e58d339bb92bd8ae.jpg",
+    "static/media/project-3.jpg": "/static/media/project-3.6a0cdb48c0d69e697f31.jpg",
+    "index.html": "/index.html",
+    "main.7147346d.css.map": "/static/css/main.7147346d.css.map",
+    "main.1c94cec5.js.map": "/static/js/main.1c94cec5.js.map",
+    "787.9ecfc8fd.chunk.js.map": "/static/js/787.9ecfc8fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7147346d.css",
+    "static/js/main.1c94cec5.js"
+  ]
+}
