@@ -1,6 +1,6 @@
 import React from "react";
-import SkillsCard from "../../cards/SkillsCard/SkillsCard";
-import { Skills } from "../../../data/data";
+import { SkillsCard } from "components/cards";
+import { Skills } from "data/data";
 
 function SkillSection() {
   return (
@@ -19,7 +19,7 @@ function SkillSection() {
                   key={value.id}
                   language={value.language}
                   percentage={value.percentage}
-                ></SkillsCard>
+                />
               ))}
             </div>
             <div className="row"></div>

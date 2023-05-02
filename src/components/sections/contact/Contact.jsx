@@ -1,7 +1,7 @@
 import React from "react";
-import { AboutMe } from "../../../data/data";
+import { AboutMe } from "data/data";
 import { useForm, ValidationError } from "@formspree/react";
-import "./ContactSection.styles.css";
+import "./Contact.styles.css";
 
 export default function ContactSection() {
   const [state, handleSubmit] = useForm("xgedzzel");

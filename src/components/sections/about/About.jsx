@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutMe } from "../../../data/data";
+import { AboutMe } from "data/data";
 
 function AboutSection() {
   function calcAge(birthDate) {

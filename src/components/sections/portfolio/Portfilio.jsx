@@ -1,7 +1,7 @@
 import React from "react";
-import PortfolioBtn from "../../buttons/PortfolioBtn/PortfolioBtn";
-import PortfolioCard from "../../cards/PortfolioCard/PortfolioCard";
-import { Work } from "../../../data/data";
+import { PortfolioButton } from "components/buttons";
+import { PortfolioCard } from "components/cards";
+import { Work } from "data/data";
 
 export default function PortfolioSection(props) {
   return (
@@ -12,11 +12,11 @@ export default function PortfolioSection(props) {
             <div className="h4 text-center mb-4 title">Portfolio</div>
             <div className="nav-align-center">
               <ul className="nav nav-pills nav-pills-primary" role="tablist">
-                <PortfolioBtn
+                <PortfolioButton
                   linkPortfolio="#web-develipment"
                   classPortfolio="nav-link active"
                   classPortfolioBtn="fa fa-code"
-                ></PortfolioBtn>
+                />
               </ul>
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function PortfolioSection(props) {
                     imageUrl={value.imageUrl}
                     title={value.title}
                     category={value.category}
-                  ></PortfolioCard>
+                  />
                 ))}
               </div>
             </div>
